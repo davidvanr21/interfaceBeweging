@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0.45turn, #2fabb1, #9433d3, #e13393);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 4em;
+    font-weight: 500;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.description {
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.6;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.controls {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.sectionBody {
+    max-width: 80vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.preferences {
+    max-height: 220px;
+    width: 42%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 40px;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.preferences a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.preferences p {
+    padding: 0 20px;
+}
+
+.flagIcon {
+    max-width: 9%;
+    padding: 0 10px;
+    opacity: 0.3;
+}
+
+.flagIcon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.selected {
+    opacity: 1;
+}
