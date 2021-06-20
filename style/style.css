@@ -21,6 +21,82 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+.GIFOff {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+}
+
+.GIFw {
+    display: block;
+}
+.GIFa {
+    display: block;
+}
+.GIFs {
+    display: block;
+}
+.GIFd {
+    display: block;
+}
+
+/* ----------------- LETTERS ----------------- */
+
+.letterW {
+    position: absolute;
+    top: 45%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.letterA {
+    position: absolute;
+    top: 49.5%;
+    left: 14.5%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.letterS {
+    position: absolute;
+    top: 55%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.letterD {
+    position: absolute;
+    top: 49.5%;
+    left: 19.5%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.fullOpacity {
+    animation: opacity 1s;
+	animation-direction: alternate;
+}
+  
+  @keyframes opacity {
+	0%   	{opacity: 0.5;}
+  	50%  	{opacity: 1;}
+	100%   	{opacity: 0.5;}
+  }
+
+
 .description {
     color: white;
     font-size: 1em;
@@ -34,7 +110,7 @@ h1 {
 
 .controls {
     position: relative;
-    text-align: center;
+    /* text-align: center; */
     color: white;
 }
 

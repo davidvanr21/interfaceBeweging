@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
 </head>
 <body>
     <section class="sectionBody">
@@ -17,22 +18,34 @@
             <img src="img/flag-spain.svg" alt="" class="flagIcon">
             <img src="img/flag-netherlands.svg" alt="" class="flagIcon">
 
-            <p>Controller: <a href="">Playstation 4 <span class="arrow">▼</span></a></p>
-            <p>Game: <a href="">FIFA <span class="arrow">▼</span></a></p>
+            <p>Controller: <a href="#">Playstation 4</a></p>
+            <p>Game: <a href="#">FIFA </a></p>
+            <!-- <span class="arrow">▼</span> -->
         </section>
 
         <section class="controls">
             <img src="img/controllerShape.svg" alt="">
-            <h1>Long/through pass</h1>
-            <p class="description">
-                Through pass is a forward pass which travels into an open space through
-                your opponent defenders so your attackers can grab the ball beyond the
-                defenders.
+            <h1 id="title">Press down a key</h1>
+            <p class="description" id="description">
+                After you press a key, the meaning of the button will be visible right here.
             </p>
-            <img src="" alt="gifAnimation" class="GIFdriehoek">
+            
+            <img src="img/gif/field_triangle.gif" alt="GIF Field" class="GIFOff" id="gifAnimatieW">
+            <img src="img/gif/field_square.gif" alt="GIF Field" class="GIFOff" id="gifAnimatieA">
+            <img src="img/gif/field_cross.gif" alt="GIF Field" class="GIFOff" id="gifAnimatieS">
+            <img src="img/gif/field_circle.gif" alt="GIF Field" class="GIFOff" id="gifAnimatieD">
+            
+            <div class="letters">
+                <p class="letterW">W</p>
+                <p class="letterA">A</p>
+                <p class="letterS">S</p>
+                <p class="letterD">D</p>
+            </div>
         </section>
     </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script/script.js"></script>
+    <script src="script/processing.js"></script>
 </body>
 </html>
