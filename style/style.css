@@ -43,6 +43,139 @@ h1 {
     display: block;
 }
 
+/* ----------------- SVP Shapes ----------------- */
+
+/* .svgShapes {
+    position: relative;
+    left: 22.2%;
+    bottom: 30%;
+    stroke-miterlimit: 10;
+    stroke-width: 7px;
+    max-width: 55px;
+} */
+
+#SVGdriehoek {
+    fill: none;
+    stroke:#239b47;
+    stroke-miterlimit: 10;
+    stroke-width: 7px;
+    max-width: 55px;
+
+    position: absolute;
+    left: 22.2%;
+    bottom: 53%;
+}
+
+#SVGdriehoek:hover {
+    stroke:#226837;
+    cursor: pointer;
+}
+
+#SVGkruis {
+    fill: none;
+    stroke:#2eb0cb;
+    stroke-miterlimit: 10;
+    stroke-width: 7px;
+    max-width: 47px;
+
+    position: absolute;
+    left: 22.3%;
+    bottom: 34.8%;
+}
+
+#SVGkruis {
+    fill: none;
+    stroke:#2eb0cb;
+    stroke-miterlimit: 10;
+    stroke-width: 7px;
+    max-width: 47px;
+
+    position: absolute;
+    left: 22.3%;
+    bottom: 34.8%;
+}
+
+#SVGvierkant {
+    fill: none;
+    stroke:#8e449e;
+    stroke-miterlimit: 10;
+    stroke-width: 7px;
+    max-width: 50px;
+
+    position: absolute;
+    left: 17.2%;
+    bottom: 43.6%;
+}
+
+#SVGcirkel {
+    fill: none;
+    stroke:#e23737;
+    stroke-miterlimit: 10;
+    stroke-width: 7px;
+    max-width: 55px;
+
+    position: absolute;
+    left: 27.2%;
+    bottom: 43.4%;
+}
+
+#SVGcirkelWit1 { /* driehoek */
+    fill: #ffffff;
+    stroke: none;
+    stroke-miterlimit: 10;
+    stroke-width: 7px;
+    max-width: 92px;
+
+    position: absolute;
+    left: 21.1%;
+    bottom: 50.6%;
+    display: none;
+}
+
+#SVGcirkelWit2 {  /* cirkel */
+    fill: #ffffff;
+    stroke: none;
+    stroke-miterlimit: 10;
+    stroke-width: 7px;
+    max-width: 92px;
+
+    position: absolute;
+    left: 26.2%;
+    bottom: 41.7%;
+    display: none;
+}
+
+#SVGcirkelWit3 { /* kruisje */
+    fill: #ffffff;
+    stroke: none;
+    stroke-miterlimit: 10;
+    stroke-width: 7px;
+    max-width: 92px;
+
+    position: absolute;
+    left: 21.1%;
+    bottom: 32.8%;
+    display: none;
+}
+
+#SVGcirkelWit4 { /* vierkant */
+    fill: #ffffff;
+    stroke: #ffffff;
+    stroke-miterlimit: 10;
+    stroke-width: 7px;
+    max-width: 85px;
+
+    position: absolute;
+    left: 16.2%;
+    bottom: 42%;
+    display: none;
+}
+
+.svgOpacityOn {
+    display: block !important;
+}
+
+
 /* ----------------- LETTERS ----------------- */
 
 .letterW {
@@ -85,7 +218,7 @@ h1 {
     opacity: 0.5;
 }
 
-.fullOpacity {
+/* .fullOpacity {
     animation: opacity 1s;
 	animation-direction: alternate;
 }
@@ -94,7 +227,7 @@ h1 {
 	0%   	{opacity: 0.5;}
   	50%  	{opacity: 1;}
 	100%   	{opacity: 0.5;}
-  }
+  } */
 
 
 .description {
@@ -127,7 +260,8 @@ h1 {
     width: 42%;
     display: flex;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: saturate(180%) blur(5px); 
     border-radius: 40px;
     padding: 20px;
     margin: 10px;
